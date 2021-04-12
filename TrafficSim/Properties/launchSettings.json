@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TrafficSim": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Programmering\\TrafficSim\\trafficsim.json"
+    }
+  }
+}

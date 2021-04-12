@@ -1,0 +1,47 @@
+{
+	"states": [
+		{
+			"name": "home",
+			"path": "https://localhost:5001",
+			"steps": [
+				{
+					"action": "refreshing",
+					"to": "home",
+					"weight": 1
+				},
+				{
+					"action": "navigating to products",
+					"to": "products",
+					"weight": 5
+				},
+				{
+					"action": "navigating to privacy tab",
+					"to": "privacy",
+					"weight": 2
+				}
+			]
+		},
+		{
+			"name": "products",
+			"path": "https://localhost:5001/Product/List",
+			"steps": [
+				{
+					"action": "navigating to landing page",
+					"to": "home",
+					"weight": 5
+				}
+			]
+		},
+		{
+			"name": "privacy",
+			"path": "https://localhost:5001/Home/Privacy",
+			"steps": [
+				{
+					"action": "navigating to landing page",
+					"to": "home",
+					"weight": 5
+				}
+			]
+		}
+	]
+}
